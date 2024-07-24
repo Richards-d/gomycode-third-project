@@ -1,0 +1,51 @@
+$hoverColor: #FF4A57;
+
+/* HEADER */
+
+header
+{
+    height: 100px;
+    background-color: #1f2235;
+    position: fixed;
+    width: 100vw;
+    z-index: 1800;
+
+    h1{
+        float: left;
+        margin-top: 32px;
+        font-size: 40px;
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .point{
+            color: #FF4A57;
+        }
+    }
+
+    nav{
+        float: right;
+        margin-top: 50px;
+        font-size: 18px;
+
+        li{
+            float: left;
+            display: inline;
+            margin-right: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 0 20px;
+
+            a{
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    color: $hoverColor;
+                }
+            }
+        }
+    }
+
+}

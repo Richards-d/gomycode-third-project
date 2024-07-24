@@ -1,0 +1,623 @@
+/* HEADER */
+header {
+  height: 100px;
+  background-color: #1f2235;
+  position: fixed;
+  width: 100vw;
+  z-index: 1800;
+}
+header h1 {
+  float: left;
+  margin-top: 32px;
+  font-size: 40px;
+}
+header h1 a {
+  text-decoration: none;
+  color: white;
+}
+header h1 .point {
+  color: #FF4A57;
+}
+header nav {
+  float: right;
+  margin-top: 50px;
+  font-size: 18px;
+}
+header nav li {
+  float: left;
+  display: inline;
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 20px;
+}
+header nav li a {
+  text-decoration: none;
+  color: white;
+}
+header nav li a:hover {
+  color: #FF4A57;
+}
+
+/* MAIN */
+/* HOME */
+#home {
+  background-color: #24263b;
+  height: 700px;
+  padding: 100px 0 0;
+}
+
+.list-item li {
+  display: inline-block;
+  margin-top: 73px;
+  padding-right: 30px;
+}
+.list-item a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #FF4A57;
+  border-radius: 50px;
+  text-align: center;
+  position: relative;
+  margin-left: 8px;
+}
+.list-item a:hover {
+  background: #FF4A57;
+}
+.list-item img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto auto auto auto;
+}
+
+.description {
+  color: white;
+  font-size: 72px;
+  margin-top: 70px;
+  font-weight: bold;
+}
+
+.button1 {
+  margin-top: 60px;
+}
+.button1 button {
+  background-color: #24263b;
+  color: white;
+  text-align: center;
+  padding: 13px 40px;
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px solid #FF4A57;
+  border-radius: 50px;
+}
+.button1 button:hover {
+  background: #FF4A57;
+}
+.button1 button a {
+  color: white;
+  text-decoration: none;
+}
+
+.video {
+  float: right;
+  margin-top: -350px;
+}
+
+/* ABOUT ME */
+#about {
+  background-color: #1f2235;
+  height: 850px;
+}
+#about .ab {
+  text-align: center;
+}
+#about .ab h1 {
+  font-size: 60px;
+  color: white;
+}
+#about p {
+  font-size: 18px;
+}
+#about .tiret {
+  border-bottom: 4px solid #FF4A57;
+  width: 50px;
+  text-align: center;
+  margin: 20px auto 20px auto;
+}
+#about .picture img {
+  height: 500px;
+  width: 320px;
+  float: left;
+  margin: 20px 100px 0 50px;
+}
+#about .ht {
+  margin-top: 90px;
+  text-align: left;
+}
+#about .ht h3 {
+  font-size: 30px;
+  color: white;
+}
+#about .ht p {
+  font-size: 15px;
+  margin-top: 20px;
+}
+#about .about-info {
+  display: flex;
+}
+#about .about-info .info {
+  text-align: left;
+  margin-top: 40px;
+}
+#about .about-info .info1 {
+  text-align: left;
+  margin-left: 150px;
+  margin-top: 40px;
+}
+#about .about-info h6 {
+  color: #FF4A57;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* WORK */
+#work {
+  background-color: #24263b;
+  height: 700px;
+}
+#work .w {
+  text-align: center;
+}
+#work .w h1 {
+  font-size: 60px;
+  color: white;
+  margin-bottom: 25px;
+}
+#work .w h1 p {
+  font-size: 18px;
+  color: white;
+}
+#work .w .tiret1 {
+  border-bottom: 4px solid #FF4A57;
+  width: 50px;
+  text-align: center;
+  margin: 20px auto 20px auto;
+}
+#work .list-item2 {
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+#work .list-item2 li {
+  display: inline-block;
+  padding-right: 35px;
+}
+#work .list-item2 li a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 7px 12px;
+}
+#work .list-item2 li a:hover {
+  background-color: #FF4A57;
+  border-radius: 50px;
+}
+#work .work-image {
+  text-align: center;
+  margin-top: 50px;
+}
+#work .work-image img {
+  height: 250px;
+  width: 250px;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+/* SKILLS */
+#skills {
+  height: 550px;
+  background-color: #1f2235;
+}
+#skills .skill1 {
+  display: flex;
+}
+#skills .skill1 .compet {
+  text-align: left;
+  margin-top: 50px;
+}
+#skills .skill1 .compet h3 {
+  color: #FF4A57;
+}
+#skills .skill1 .compet h1 {
+  color: white;
+  font-size: 60px;
+}
+#skills .skill1 .compet p {
+  margin: 13px 0 45px 0;
+}
+#skills .skill1 .compet .button3 button {
+  background-color: #1f2235;
+  color: white;
+  text-align: center;
+  padding: 13px 40px;
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px solid #FF4A57;
+  border-radius: 50px;
+}
+#skills .skill1 .compet .button3 button:hover {
+  background: #FF4A57;
+}
+#skills .skill1 .compet .button3 button a {
+  color: white;
+  text-decoration: none;
+}
+#skills .skill2 {
+  width: 100%;
+  max-width: 600px;
+  padding-left: 90px;
+  margin-top: 100px;
+}
+#skills .skill2 .skill {
+  padding-bottom: 25px;
+}
+#skills .skill2 .skill .skill-name {
+  font-size: 18px;
+  color: white;
+  margin: 10px 0;
+}
+#skills .skill2 .skill .skill-bar {
+  height: 7px;
+  background: #24263b;
+}
+#skills .skill2 .skill .skill-bar .skill-per {
+  height: 7px;
+  background: #FF4A57;
+  position: relative;
+}
+#skills .skill2 .skill .skill-bar .skill-per::before {
+  content: attr(per);
+  font-weight: bold;
+  position: absolute;
+  padding: 4px 6px;
+  background: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+#skills .skill2 .skill .skill-bar .skill-per::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  top: -15px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+/* RESUME */
+#resume {
+  background-color: #24263b;
+  height: 1450px;
+}
+#resume .res {
+  text-align: center;
+}
+#resume .res h1 {
+  color: white;
+  font-size: 60px;
+}
+#resume .res p {
+  margin-top: 25px;
+}
+#resume h2 {
+  color: #FF4A57;
+  font-size: 30px;
+}
+#resume h3 {
+  color: white;
+  font-weight: lighter;
+  font-size: 30px;
+}
+#resume h6 {
+  color: white;
+  font-size: large;
+  margin-top: 10px;
+}
+#resume p {
+  margin-top: 23px;
+}
+#resume .cv1 {
+  margin-top: 130px;
+}
+#resume .cv1 .design {
+  background-color: #1f2235;
+  height: 280px;
+  width: 540px;
+  padding: 30px 25px 0 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+#resume .cv1 .c-a {
+  background-color: #1f2235;
+  height: 280px;
+  width: 540px;
+  padding: 30px 25px 0 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+#resume .cv1 .computer {
+  background-color: #1f2235;
+  height: 280px;
+  width: 540px;
+  padding: 30px 25px 0 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+#resume .cv2 {
+  float: right;
+  margin-top: -1005px;
+}
+#resume .cv2 .art {
+  background-color: #1f2235;
+  height: 280px;
+  width: 540px;
+  padding: 30px 25px 0 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+#resume .cv2 .wordpress {
+  background-color: #1f2235;
+  height: 280px;
+  width: 540px;
+  padding: 30px 25px 0 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+#resume .cv2 .ui-ux {
+  background-color: #1f2235;
+  height: 280px;
+  width: 540px;
+  padding: 30px 25px 0 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+#resume .button4 {
+  text-align: center;
+  margin-top: 50px;
+}
+#resume .button4 button {
+  background-color: #24263b;
+  color: white;
+  text-align: center;
+  padding: 13px 40px;
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px solid #FF4A57;
+  border-radius: 50px;
+}
+#resume .button4 button:hover {
+  background: #FF4A57;
+}
+#resume .button4 button a {
+  color: white;
+  text-decoration: none;
+}
+
+/* CONTACT */
+#contact {
+  height: 1100px;
+  background-color: #1f2235;
+}
+#contact .contact-me {
+  text-align: center;
+  padding-top: 50px;
+}
+#contact .contact-me h3 {
+  color: #FF4A57;
+}
+#contact .contact-me h1 {
+  color: white;
+  font-size: 60px;
+}
+#contact .contact-me p {
+  padding-top: 30px;
+}
+#contact .contact-me .tiret3 {
+  border-bottom: 4px solid #FF4A57;
+  width: 50px;
+  text-align: center;
+  margin: 20px auto 20px auto;
+}
+#contact .contact-me2 {
+  display: flex;
+}
+#contact .contact-me2 .adress {
+  display: flex;
+  background-color: #24263b;
+  height: 120px;
+  width: 380px;
+  border-radius: 7px;
+  margin-right: 20px;
+}
+#contact .contact-me2 .adress .pic1, #contact .contact-me2 .adress .loc {
+  margin: 30px 0 0 30px;
+}
+#contact .contact-me2 .adress .loc {
+  margin-left: 20px;
+}
+#contact .contact-me2 .adress .loc h4 {
+  color: white;
+}
+#contact .contact-me2 .adress .loc p {
+  padding-top: 10px;
+}
+#contact .contact-me2 .call {
+  display: flex;
+  background-color: #24263b;
+  height: 120px;
+  width: 380px;
+  border-radius: 7px;
+  margin-right: 20px;
+}
+#contact .contact-me2 .call .pic2, #contact .contact-me2 .call .num {
+  margin: 30px 0 0 30px;
+}
+#contact .contact-me2 .call .num {
+  margin-left: 20px;
+}
+#contact .contact-me2 .call .num h4 {
+  color: white;
+}
+#contact .contact-me2 .call .num p {
+  padding-top: 10px;
+}
+#contact .contact-me2 .mail {
+  display: flex;
+  background-color: #24263b;
+  height: 120px;
+  width: 380px;
+  border-radius: 7px;
+  margin-right: 20px;
+}
+#contact .contact-me2 .mail .pic3, #contact .contact-me2 .mail .email {
+  margin: 30px 0 0 30px;
+}
+#contact .contact-me2 .mail .email {
+  margin-left: 20px;
+}
+#contact .contact-me2 .mail .email h4 {
+  color: white;
+}
+#contact .contact-me2 .mail .email p {
+  padding-top: 10px;
+}
+#contact form {
+  margin-top: 70px;
+}
+#contact form input[type=text], #contact form [type=email] {
+  background-color: #24263b;
+  color: white;
+  width: 537px;
+  padding: 20px;
+  font-size: 18px;
+  margin-right: 20px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 40px;
+}
+#contact form input[type=""] {
+  background-color: #24263b;
+  color: white;
+  width: 1137px;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 20px;
+}
+#contact form textarea {
+  background-color: #24263b;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 20px;
+}
+#contact form input[type=submit] {
+  background-color: #FF4A57;
+  color: white;
+  text-align: center;
+  padding: 13px 40px;
+  font-size: 15px;
+  border: 2px solid #FF4A57;
+  border-radius: 50px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #24263b;
+  height: 500px;
+  text-align: center;
+}
+footer h1 {
+  padding-top: 70px;
+  font-size: 40px;
+}
+footer h1 a {
+  color: white;
+  text-decoration: none;
+}
+footer p {
+  margin-top: 40px;
+}
+footer .list-item3 li {
+  display: inline-block;
+  margin: 75px 35px 0 0;
+}
+footer .list-item3 li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #1f2235;
+  border-radius: 50px;
+  text-align: center;
+  position: relative;
+  margin-left: 8px;
+}
+footer .list-item3 li a:hover {
+  background-color: #FF4A57;
+}
+footer .list-item3 li a img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto auto auto auto;
+}
+footer .list-item3 p {
+  padding-top: 50px;
+}
+footer .list-item3 a {
+  text-decoration: none;
+  color: #FF4A57;
+}
+footer .list-item3 a:hover {
+  color: white;
+}
+
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.point {
+  color: #FF4A57;
+}
+
+p {
+  color: white;
+}/*# sourceMappingURL=styles.css.map */

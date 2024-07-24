@@ -1,0 +1,28 @@
+@import 'header';
+@import 'main';
+@import 'footer';
+
+/* GENERAL */
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+.wrapper
+{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.point
+{
+    color: #FF4A57;
+}
+
+p
+{
+    color: white;
+}

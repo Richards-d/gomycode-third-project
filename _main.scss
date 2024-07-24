@@ -1,0 +1,586 @@
+$backgroundColor1: #24263b;
+$backgroundColor2: #1f2235;
+$hoverColor: #FF4A57;
+$textColor: white;
+
+@mixin buttonDesign(){
+    background-color: #24263b;
+    color: $textColor;
+    text-align: center;
+    padding: 13px 40px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #FF4A57;
+    border-radius: 50px;
+
+    &:hover{
+        background: $hoverColor;
+    }
+
+    a{
+        color: $textColor;
+        text-decoration: none;
+    }
+}
+
+@mixin buttonDesign1(){
+    background-color: #1f2235;
+    color: $textColor;
+    text-align: center;
+    padding: 13px 40px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #FF4A57;
+    border-radius: 50px;
+
+    &:hover{
+        background: $hoverColor;
+    }
+
+    a{
+        color: $textColor;
+        text-decoration: none;
+    }
+}
+
+@mixin tiretCenter(){
+    border-bottom: 4px solid #FF4A57;
+    width: 50px;
+    text-align: center;
+    margin: 20px auto 20px auto;
+}
+
+@mixin resumeDesign(){
+    background-color: #1f2235;
+    height: 280px;
+    width: 540px;
+    padding: 30px 25px 0 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+@mixin contactDesign(){
+    display: flex;
+    background-color: #24263b;
+    height: 120px;
+    width: 380px;
+    border-radius: 7px;
+    margin-right: 20px;
+}
+
+/* MAIN */
+
+        /* HOME */
+
+#home
+{
+    background-color: $backgroundColor1;
+    height: 700px;
+    padding: 100px 0 0;
+}
+.list-item
+{
+    li{
+        display: inline-block;
+        margin-top: 73px;
+        padding-right: 30px;
+    }
+
+    a{
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #FF4A57;
+        border-radius: 50px;
+        text-align: center;
+        position: relative;
+        margin-left: 8px;
+
+            &:hover{
+                background: $hoverColor;
+            }
+    }
+
+    img{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto auto auto auto;
+    }
+    
+}
+        
+.description
+{
+    color: $textColor;
+    font-size: 72px;
+    margin-top: 70px;
+    font-weight: bold;
+}
+        
+.button1
+{
+    margin-top: 60px;
+
+    button{
+        @include buttonDesign();
+    }
+}
+               
+.video
+{
+    float: right;
+    margin-top: -350px;
+}
+        
+                /* ABOUT ME */
+#about
+{
+    background-color: $backgroundColor2;
+    height: 850px;
+
+    .ab{
+        text-align: center;
+
+        h1{
+            font-size: 60px;
+            color: white;
+        }
+    }
+
+    p{
+        font-size: 18px;      
+    }
+
+    .tiret{
+        @include tiretCenter();
+    }
+
+    .picture{
+        img{
+            height: 500px;
+            width: 320px;
+            float: left;
+            margin: 20px 100px 0 50px;
+        }   
+    }
+
+    .ht{
+        margin-top: 90px;
+        text-align: left;
+
+        h3{
+            font-size: 30px;
+            color: $textColor;
+        }
+
+        p{
+            font-size: 15px;
+            margin-top: 20px;
+        }
+    }
+
+    .about-info{
+            display: flex;
+
+        .info{
+            text-align: left;
+            margin-top: 40px;
+        }
+
+        .info1{
+            text-align: left;
+            margin-left: 150px;
+            margin-top: 40px;
+        }
+
+        h6{
+            color: #FF4A57;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    }
+}    
+        
+        /* WORK */
+#work{
+    background-color: $backgroundColor1;
+    height: 700px;
+
+    .w{
+        text-align: center;
+
+        h1{
+            font-size: 60px;
+            color: white;
+            margin-bottom: 25px;
+
+            p{
+                font-size: 18px;
+                color: $textColor;
+            }
+        }
+
+        .tiret1{
+            @include tiretCenter();
+        }
+    }
+    .list-item2{
+        font-size: 18px;
+        text-align: center;
+        color: $textColor;
+
+        li{
+            display: inline-block;
+            padding-right: 35px;
+
+            a{
+            text-decoration: none;
+            color: $textColor;
+            text-align: center;
+            padding: 7px 12px;
+
+                &:hover{
+                    background-color: $hoverColor;
+                    border-radius: 50px;
+                }
+            }    
+        }      
+    }
+
+    .work-image{
+        text-align: center;
+        margin-top: 50px;
+
+            img{
+                height: 250px;
+                width: 250px;
+                padding: 20px;
+                border-radius: 40px;
+            } 
+    }
+}
+             
+        /* SKILLS */
+#skills{
+    height: 550px;
+    background-color: #1f2235;
+
+    .skill1{
+        display: flex;
+
+        .compet{
+            text-align: left;
+            margin-top: 50px;
+    
+            h3{
+                color: #FF4A57;
+            }
+    
+            h1{
+                color: white;
+                font-size: 60px;
+            }
+    
+            p{
+                margin: 13px 0 45px 0;
+            }
+    
+            .button3{
+                button{
+                    @include buttonDesign1();
+                }
+            }
+        }   
+    }
+
+    .skill2{
+        width: 100%;
+        max-width: 600px;
+        padding-left: 90px;
+        margin-top: 100px;
+
+        .skill{
+            padding-bottom: 25px;
+
+            .skill-name{
+                font-size: 18px;
+                color: white;
+                margin: 10px 0;
+            }
+            .skill-bar{
+                height: 7px;
+                background: #24263b;
+
+                .skill-per{
+                    height: 7px;
+                    background: #FF4A57;
+                    position: relative;
+
+                    &::before{
+                        content: attr(per);
+                        font-weight: bold;
+                        position: absolute;
+                        padding: 4px 6px;
+                        background: white;
+                        border: 2px solid white;
+                        border-radius: 4px;
+                        font-size: 12px;
+                        margin-top: -35px;
+                        right: 0;
+                        transform: translateX(50%);
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 10px;
+                        height: 10px;
+                        background: white;
+                        top: -15px;
+                        right: 0;
+                        transform: translateX(50%) rotate(45deg);
+                        border-radius: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+        
+        /* RESUME */
+#resume{
+    background-color: #24263b;
+    height: 1450px;
+
+    .res{
+        text-align: center;
+
+        h1{
+            color: white;
+            font-size: 60px;
+        }
+        p{
+            margin-top: 25px;
+        }
+    }
+
+    h2{
+        color: #FF4A57;
+        font-size: 30px;
+    }
+
+    h3{
+        color: white;
+        font-weight: lighter;
+        font-size: 30px;
+    }
+
+    h6{
+        color: white;
+        font-size: large;
+        margin-top: 10px;
+    }
+
+    p{
+        margin-top: 23px;
+    }
+
+    .cv1{
+        margin-top: 130px;
+
+        .design{
+            @include resumeDesign();
+        }
+        .c-a
+        {
+            @include resumeDesign();
+        }
+        .computer
+        {
+            @include resumeDesign();
+        }
+    }
+
+    .cv2{
+        float: right;
+        margin-top: -1005px;
+
+        .art{
+            @include resumeDesign();
+        }
+
+        .wordpress{
+            @include resumeDesign();
+        }
+        .ui-ux{
+            @include resumeDesign();
+        }
+    }
+
+    .button4{
+            text-align: center;
+            margin-top: 50px;
+
+                button{
+                    @include buttonDesign();
+                }
+        }
+}
+        
+        /* CONTACT */
+#contact{
+    height: 1100px;
+    background-color: #1f2235;
+
+    .contact-me{
+        text-align: center;
+        padding-top: 50px;
+
+        h3{
+            color: #FF4A57;
+        }
+
+        h1{
+            color: white;
+            font-size: 60px;
+        }
+
+        p{
+            padding-top: 30px;
+        }
+
+        .tiret3{
+            @include tiretCenter();
+        }
+    }
+
+    .contact-me2{
+        display: flex;
+
+        .adress{
+            @include contactDesign();
+
+            .pic1, .loc{
+                margin: 30px 0 0 30px;
+            }
+
+            .loc{
+                margin-left: 20px;
+
+                h4{
+                    color: white;
+                }
+
+                p{
+                    padding-top: 10px;
+                }
+            }
+        }
+
+        .call{
+            @include contactDesign();
+
+            .pic2, .num{
+                margin: 30px 0 0 30px;
+            }
+
+            .num{
+                margin-left: 20px;
+
+                h4{
+                    color: white;
+                }
+
+                p{
+                    padding-top: 10px;
+                }
+            }
+        }
+
+        .mail{
+            @include contactDesign();
+
+            .pic3, .email{
+                margin: 30px 0 0 30px;
+            }
+
+            .email{
+                margin-left: 20px;
+
+                h4{
+                    color: white;
+                }
+
+                p{
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+
+    form{
+        margin-top: 70px;
+
+        input[type="text"], [type="email"]{
+            background-color: #24263b;
+            color: white;
+            width: 537px;
+            padding: 20px;
+            font-size: 18px;
+            margin-right: 20px;
+            border-radius: 6px;
+            border: none;
+            margin-bottom: 40px;
+        }
+
+        input[type=""]{
+            background-color: #24263b;
+            color: white;
+            width: 1137px;
+            padding: 20px;
+            font-size: 18px;
+            border-radius: 6px;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        textarea{
+            background-color: #24263b;
+            color: white;
+            padding: 20px;
+            font-size: 18px;
+            border-radius: 6px;
+            border: none;
+            margin-bottom: 20px;
+        }
+        input[type="submit"]{
+            background-color: #FF4A57;
+            color: white;
+            text-align: center;
+            padding: 13px 40px;
+            font-size: 15px;
+            border: 2px solid #FF4A57;
+            border-radius: 50px;
+        }
+    }
+}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
